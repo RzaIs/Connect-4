@@ -44,20 +44,20 @@ bool Board::inBoard(Point point) {
 std::vector<Cell> Board::getSequence(Cell centerCell, Direction direction) {
   Point point, center = Point(centerCell);
   switch (direction) {
-  case horizontal:
-    point = Point(1, 0);
-    break;
-  case vertical:
-    point = Point(0, 1);
-    break;
-  case diagonal1:
-    point = Point(1, 1);
-    break;
-  case diagonal2:
-    point = Point(1, -1);
-    break;
-  default:
-    break;
+    case horizontal:
+      point = Point(1, 0);
+      break;
+    case vertical:
+      point = Point(0, 1);
+      break;
+    case diagonal1:
+      point = Point(1, 1);
+      break;
+    case diagonal2:
+      point = Point(1, -1);
+      break;
+    default:
+      break;
   }
 
   std::vector<Point> points = {
