@@ -5,6 +5,10 @@ Point::Point(int x, int y) {
   this->y = y;
 }
 
+Point::Point(Cell cell) {
+  Point(cell.getCol(), cell.getRow());
+}
+
 Point::Point() {
   Point(0, 0);
 }

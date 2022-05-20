@@ -42,7 +42,7 @@ bool Board::inBoard(Point point) {
 }
 
 std::vector<Cell> Board::getSequence(Cell centerCell, Direction direction) {
-  Point point, center = Point(centerCell.getCol(), centerCell.getRow());
+  Point point, center = Point(centerCell);
   switch (direction) {
   case horizontal:
     point = Point(1, 0);
@@ -119,14 +119,6 @@ void Board::show() {
     }
     std::cout << std::endl;
   }
-
-  // for (std::vector<Cell> & sb : this->table) {
-
-  //   std::cout << ('A' + )
-  //   // printf("%c", 'A' + i);
-  //   for (Cell & cell : sb)
-  //     cell.show();
-  // }
 }
 
 int Board::getCols() {
