@@ -1,7 +1,7 @@
 # Connect 4 in colored console
 
-./config.sh to configure cmake
+`./config.sh` to configure cmake
 
-./make.sh to build game
+`./make.sh` to build game
 
-./run.sh to run game
+`./run.sh` to run game
